@@ -33,7 +33,7 @@ else
      echo -e " $G you are using root user $N "
 fi
 
-yum install python3.6 gcc python3-devel -y  &>> $LOGFILE
+yum install python36 gcc python3-devel -y  &>> $LOGFILE
 
 VALIDATE $? " install python 3.6 "
 

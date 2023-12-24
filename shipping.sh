@@ -59,7 +59,7 @@ then
 
  VALIDATE $? "app directory created"
  else 
-  echo "directory already existed $Y skipping $N"
+  echo -e "directory already existed $Y skipping $N"
 
 fi
 
