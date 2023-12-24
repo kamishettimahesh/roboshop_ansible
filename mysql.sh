@@ -37,7 +37,7 @@ yum module disable mysql -y  &>> $LOGFILE
 
 VALIDATE $?  "disable mysql"
 
-cp /home/centos/roboshop_shellscripting mysql.repo /etc/yum.repos.d/mysql.repo &>> $LOGFILE
+cp /home/centos/roboshop_shellscripting/mysql.repo /etc/yum.repos.d/mysql.repo &>> $LOGFILE
 
 VALIDATE $?  "loading mysql.repo"
 
