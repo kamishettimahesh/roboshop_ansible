@@ -59,7 +59,7 @@ curl -o /tmp/catalogue.zip https://roboshop-builds.s3.amazonaws.com/catalogue.zi
  cd /app  &>> $LOGFILE
   VALIDATE $? " change directory /app "
 
-unzip /tmp/catalogue.zip &>> $LOGFILE
+unzip -o /tmp/catalogue.zip &>> $LOGFILE
  VALIDATE $? " unzip catalogue in  /app "
 
 npm install &>> $LOGFILE
