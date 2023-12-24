@@ -92,16 +92,3 @@ mongo --host 172.31.33.83 </app/schema/catalogue.js &>> $LOGFILE
 
 
 VALIDATE $? "mongo host applied to catalogue"
-
-
-
-
-
-
-
-
-
-
-
-
-
