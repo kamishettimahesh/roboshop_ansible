@@ -65,7 +65,7 @@ unzip /tmp/catalogue.zip &>> $LOGFILE
 npm install &>> $LOGFILE
  VALIDATE $? " install dependencies by using npm "
 
-cp /home/centos/roboshop_shellscripting/roboshop/catalogue.service /etc/systemd/system/catalogue.service  &>> $LOGFILE
+cp /home/centos/roboshop_shellscripting/catalogue.service /etc/systemd/system/catalogue.service  &>> $LOGFILE
   
   VALIDATE $? "copy catalogue.service"
 
@@ -80,7 +80,7 @@ systemctl enable catalogue &>> $LOGFILE
 systemctl start catalogue  &>> $LOGFILE
    VALIDATE $? "start catalogue"
 
-cp /home/centos/roboshop_shellscripting/roboshop/mongo.repo /etc/yum.repos.d/mongo.repo &>> $LOGFILE
+cp /home/centos/roboshop_shellscripting/mongo.repo /etc/yum.repos.d/mongo.repo &>> $LOGFILE
 
 VALIDATE $? "copy mongo.repo"
 
