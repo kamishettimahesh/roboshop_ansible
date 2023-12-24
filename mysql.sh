@@ -33,7 +33,7 @@ else
      echo -e " $G you are using root user $N "
 fi 
 
-yum module disable mysql -y  &>> $LOGFILE
+dnf module disable mysql -y  &>> $LOGFILE
 
 VALIDATE $?  "disable mysql"
 
@@ -42,7 +42,7 @@ cp /home/centos/roboshop_shellscripting/mysql.repo /etc/yum.repos.d/mysql.repo &
 VALIDATE $?  "loading mysql.repo"
 
 
-yum install mysql-community-server -y  &>> $LOGFILE
+dnf install mysql-community-server -y  &>> $LOGFILE
 
 VALIDATE $?  "install mysql server"
 
