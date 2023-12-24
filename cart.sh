@@ -33,7 +33,7 @@ else
      echo -e " $G you are using root user $N "
 fi 
 
-curl -sL -o https://rpm.nodesource.com/setup_lts.x | bash &>> $LOGFILE
+curl -sL  https://rpm.nodesource.com/setup_lts.x | bash &>> $LOGFILE
 
 VALIDATE $? "RPM Resouces downloaging"
 
