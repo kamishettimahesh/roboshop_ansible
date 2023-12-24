@@ -88,7 +88,7 @@ dnf install mongodb-org-shell -y &>> $LOGFILE
 
 VALIDATE $? "install mongodb"
 
-mongo --host MONGODB-SERVER-IPADDRESS </app/schema/catalogue.js &>> $LOGFILE
+mongo --host 172.31.33.83 </app/schema/catalogue.js &>> $LOGFILE
 
 
 VALIDATE $? "mongo host applied to catalogue"
