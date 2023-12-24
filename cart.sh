@@ -33,9 +33,13 @@ else
      echo -e " $G you are using root user $N "
 fi 
 
-curl -sL  https://rpm.nodesource.com/setup_lts.x | bash &>> $LOGFILE
+dnf module disable nodejs -y &>> $LOGFILE
 
-VALIDATE $? "RPM Resouces downloaging"
+VALIDATE $? "Disabling current NodeJS"
+
+dnf module enable nodejs:18 -y  &>> $LOGFILE
+
+VALIDATE $? "Enabling NodeJS:18"
 
 dnf install nodejs -y   &>> $LOGFILE
 
