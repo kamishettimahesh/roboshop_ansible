@@ -31,7 +31,7 @@ then
      exit 1
 else 
      echo -e " $G you are using root user $N "
-fi 
+fi
 
 dnf module disable nodejs -y  &>> $LOGFILE
 VALIDATE $? " Disable nodejs current version "
