@@ -116,7 +116,7 @@ yum install mysql -y  &>> $LOGFILE
  VALIDATE $? "install mysql"
 
 
-mysql -h <172.31.85.54> -uroot -pRoboShop@1 < /app/schema/shipping.sql  &>> $LOGFILE
+mysql -h 172.31.85.54 -uroot -pRoboShop@1 < /app/schema/shipping.sql  &>> $LOGFILE
 
  VALIDATE $? "load schema"
 
