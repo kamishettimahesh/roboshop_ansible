@@ -12,7 +12,7 @@
 
   - name: install mysql community server 
     ansible.builtin.package:
-      name: mysql-community-server -y
+      name: mysql-community-server
       state: present
 
   - name: enable and run mysql 
