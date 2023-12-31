@@ -1,0 +1,12 @@
+- name: loops
+  hosts: local
+  become: yes
+  tasks:
+  - name: install packages
+    ansible.builtin.packages:
+      name: "{{item}}"
+      state: present
+    loops:
+    - git
+    - maven
+    - nginx  

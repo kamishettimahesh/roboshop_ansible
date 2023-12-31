@@ -1,0 +1,32 @@
+- name: variables from play level
+  hosts: local host
+  vars:
+    Course: "Devops"
+    Duration: "110hrs"
+    Trainer: "Shivakumar"
+  tasks: 
+  - name: check variables
+    ansible.builtin.debug:
+      msg: "hi, i am learning {{Course}}, Trainer is {{Trainer}}, and Duration is {{Duration}}"
+
+
+
+    #   We can provide vars 
+    #   1.play level 
+    #   2.task level
+    #   3.variables files
+    #   4.variables from prompt
+    #   5.inventory files
+    #   6. cmd     
+
+
+
+ # it gives preference 
+
+    # 1.cmd   
+    # 2.task level
+    # 3.file
+    # 4.prompt
+    # 5.play
+    # 6.inventory                      
+                  
