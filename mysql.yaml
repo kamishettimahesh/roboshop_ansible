@@ -4,7 +4,7 @@
   tasks:
   - name: disable mysql component
     ansible.builtin.command: dnf module disable mysql -y
-      remote_src: true
+    remote_src: true
 
   - name: copy mysql.repos
     ansible.builtin.copy:
