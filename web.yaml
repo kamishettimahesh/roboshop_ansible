@@ -31,7 +31,7 @@
   - name: unzip web application
     ansible.builtin.unarchive:
       src: /tmp/web.zip
-      dest: usr/share/nginx/html
+      dest: /home/centos/mahesh/roboshop_ansible/usr/share/nginx/html
       remote_src: yes
 
   - name: copy roboshop.conf
