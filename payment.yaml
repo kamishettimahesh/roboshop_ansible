@@ -1,0 +1,7 @@
+- name: install payment component
+  hosts: payment
+  become: yes
+  tasks: 
+  - name: install python 3.6
+    ansible.builtin.command: dnf install python36 gcc python3-devel -y
+    
