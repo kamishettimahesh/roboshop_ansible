@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: disable mysql component
-    ansible.builtin.command: dnf module disable mysql -y
+    ansible.builtin.command: dnf module disable mysql
     remote_src: true
 
   - name: copy mysql.repos
