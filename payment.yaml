@@ -25,8 +25,8 @@
       dest: /tmp
   
   - name: unarcheive payment application
-    ansible.builtin.unarchive
+    ansible.builtin.unarchive:
       src: /tmp/payment.zip
       dest: /app
-    remote_src: yes
+      remote_src: yes
 
