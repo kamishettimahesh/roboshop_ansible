@@ -4,12 +4,13 @@
   tasks:
   - name: disable mysql component
     ansible.builtin.command: dnf module disable mysql -y
-    remote_src: true
 
   - name: copy mysql.repos
     ansible.builtin.copy:
       src: mysql.repos
       dest: /etc/yum.repos.d/mysql.repo
+      remote_src: true
+
 
   - name: install mysql community server 
     ansible.builtin.package:
