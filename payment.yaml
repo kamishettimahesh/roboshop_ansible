@@ -2,7 +2,7 @@
   hosts: payment
   become: yes
   tasks: 
-  - name: install python 3.6
+  - name: install python 36
     ansible.builtin.dnf:
       name: "{{items}}"
       state: present
