@@ -3,7 +3,13 @@
   become: yes
   tasks: 
   - name: install python 3.6
-    ansible.builtin.command: dnf install python36 gcc python3-devel -y
+    ansible.builtin.package:
+      name: {{ item }}
+      state: present
+    loop:
+    -  python36
+    -  gcc 
+    -  python3-devel  
 
   - name: create roboshop
     ansible.builtin.user:
